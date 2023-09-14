@@ -46,7 +46,7 @@ const notificationsCollectionRef = collection(userDocRef, "Notifications");
             Name: user.displayName,
             Email: user.email
         });
-        navigate("/");
+        navigate("/login");
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
