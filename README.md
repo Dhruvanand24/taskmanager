@@ -1,5 +1,8 @@
 The App is live on (https://taskmanager-six-mocha.vercel.app/)
 
+Id for Testing:
+email: test@gmail.com
+password: 123456
 
 Clone this Repository on your local computer.
 On your Terminal,
