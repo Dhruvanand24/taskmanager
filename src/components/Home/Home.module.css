@@ -1,0 +1,167 @@
+.mainbox{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    background-color: #0c0c0ce5;
+
+}
+.header{
+    padding: 1px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-items: center;
+    width: 100%;
+    max-height: max-content;
+    
+}
+.eachtasks{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 80vw;
+    margin: 10px;
+    border-radius: 24px;
+    padding-left: 20px;
+    align-items: flex-start;
+    background-color: #2e2b2b;
+}
+.signoutbutton{
+    background-color: rgb(236, 78, 78);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.signoutbutton:hover{
+    color:white;
+}
+.mainarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Taskcard{
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    border-style: groove;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-wrap: wrap;
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+}
+
+  
+.Taskcard label {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #313131;
+  }
+  
+.Taskcard input {
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    outline: none;
+    padding: 10px 15px;
+    color: #000;
+  }
+.Taskcard textarea {
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    outline: none;
+    padding: 10px 15px;
+    color: #000;
+    max-width: 80vw;
+  }
+  
+.Taskcard input:hover {
+    border-color: #ccc;
+  }
+  
+.Taskcard input:focus {
+    border-color: #9900ff;
+  }
+.Taskcard textarea:hover {
+    border-color: #ccc;
+  }
+  
+.Taskcard textarea:focus {
+    border-color: #9900ff;
+  }
+.addtaskbutton {
+    color: white;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: green;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 10px;
+}
+.addtaskbutton:hover{
+    color:black;
+}
+.deletebutton {
+    color: white;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(128, 17, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 10px;
+}
+.deletebutton:hover{
+    color:black;
+}
+.updatebutton {
+    color: white;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 10px;
+}
+.updatebutton:hover{
+    color:black;
+}
+.descriptionbox{
+    border: 1px solid gray;
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+    
+}
+.commentbox{
+    background-color: #2c2727c7;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.commentadder{
+    height: 45px;
+    border-radius: 10px;
+    width: 50vw;
+    border: none;
+}
