@@ -77,7 +77,7 @@ const Taskadder = (props) => {
       </select>
       
     </div>
-   <AddTaskButton Title={title} Description={description} DueDate={selectedDate} AssignedTo={selectedUser.username} Status = "Pending" AssignedBy={null} SelectedUserId={selectedUser.userId}/>
+   <AddTaskButton Title={title} Description={description} DueDate={selectedDate} AssignedTo={selectedUser.username} Status = "Pending" AssignedBy={currentUser.displayName} SelectedUserId={selectedUser.userId} AssignedByid={currentUser.uid}/>
     </div>
 
       

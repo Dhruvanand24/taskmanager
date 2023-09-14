@@ -8,14 +8,12 @@ const CommentAdder = (props) => {
     const user = auth.currentUser;
     const updatedata = async()=>{
         try {
-            const userRef = collection(db, "users");
-            const TaskRef = doc(userRef, user.uid);
-            const TaskCol = collection(TaskRef, "Tasks");
-            const docRef = doc(TaskCol, id);
-            const comRef = collection(docRef, "Comments");
+            const userRef = collection(db, "Tasks");
+            const TaskRef = doc(userRef, id);
+            const TaskCol = collection(TaskRef, "Comments");
             
             
-            await addDoc(comRef,{
+            await addDoc(TaskCol,{
                 Comment: props.comment,
                 Name:user.displayName,
 

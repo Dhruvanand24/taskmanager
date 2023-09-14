@@ -13,6 +13,8 @@ const AddTaskButton = (props) => {
         DueDate: props.DueDate,
         AssignedTo: props.AssignedTo,
         AssignedBy: props.AssignedBy,
+        AssignedByid: props.AssignedByid,
+        AssignedToid: props.SelectedUserId,
         Status: props.Status
     }
    
@@ -23,29 +25,9 @@ const AddTaskButton = (props) => {
             return;
         }
          try {
-            const userRef = collection(db, "users");
-            const TaskRef = doc(userRef, user.uid);
-            const TaskCol = collection(TaskRef, "Tasks");
-            await addDoc(TaskCol,data );
+            const userRef = collection(db, "Tasks");
+            await addDoc(userRef,data );
             
-            
-            if(props.AssignedTo!==null){
-              const taskref = doc(userRef, props.SelectedUserId);
-              const taskcol = collection(taskref, "Tasks");
-              await addDoc(taskcol, {
-                Title: props.Title,
-                Description: props.Description,
-                DueDate: props.DueDate,
-                AssignedBy: user.displayName,
-                Status: props.Status,
-                
-              });
-              const notref = collection(taskref, "Notifications");
-              await addDoc(notref,{
-                  Name: user.displayName,
-                  Title: props.Title
-              });
-            }
          }
          catch (error) {
             console.error('Error adding document to subcollection: ', error);

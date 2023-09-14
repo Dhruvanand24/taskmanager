@@ -12,12 +12,10 @@ const CompletedButton = (props) => {
 
     const updatedata = async()=>{
         try {
-            const userRef = collection(db, "users");
-            const TaskRef = doc(userRef, user.uid);
-            const TaskCol = collection(TaskRef, "Tasks");
-            const docRef = doc(TaskCol, id);
+            const userRef = collection(db, "Tasks");
+            const TaskRef = doc(userRef, id);
             if(status==="Completed"){
-            await updateDoc(docRef,{
+            await updateDoc(TaskRef,{
                 Status: "Pending"
                 
             });
@@ -25,7 +23,7 @@ const CompletedButton = (props) => {
             
         };  
         if(status==="Pending"){
-            await updateDoc(docRef,{
+            await updateDoc(TaskRef,{
                 Status: "Completed"
                 
             });
