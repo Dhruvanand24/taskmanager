@@ -53,7 +53,7 @@ function Home() {
 
         </div>
         <div className={styles.mainarea}>
-        <Taskadder userName={props.name}/>
+        <Taskadder userName={currentUser.displayName}/>
         {currentUser?
         <RealTimeTasks id={currentUser.uid}/>:<></>
         }
