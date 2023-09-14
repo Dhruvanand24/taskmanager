@@ -11,7 +11,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 
 
 
-function Home() {
+function Home(props) {
   console.log("executed Home");
   const [showNotificationOverlay, setShowNotificationOverlay] = useState(false); // State for showing the overlay
   const [notifications, setNotifications] = useState(["1", "2"]); // State for notifications
@@ -44,7 +44,7 @@ function Home() {
                 <Link to="/signup"><PersonAddAlt1Icon/></Link>
             </h4> 
             
-            <h4>{currentUser.displayName}</h4>
+            <h4>{props.name}</h4>
             <div>
           {/* Button to open/close the notification overlay */}
           <button onClick={toggleNotificationOverlay}><NotificationsIcon /></button>
@@ -53,7 +53,7 @@ function Home() {
 
         </div>
         <div className={styles.mainarea}>
-        <Taskadder userName={currentUser.displayName}/>
+        <Taskadder userName={props.name}/>
         {currentUser?
         <RealTimeTasks id={currentUser.uid}/>:<></>
         }
