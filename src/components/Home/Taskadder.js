@@ -41,10 +41,13 @@ const Taskadder = (props) => {
           
     },[])
     const handleUserSelect = (event) => {
-     
+     if(event.target.value!==""){
       const selectedUserId = event.target.value; // Get the selected user's ID
   const selectedUserData = allUsers.find((user) => user.userId === selectedUserId);
-  setSelectedUser(selectedUserData);
+  setSelectedUser(selectedUserData);}
+  else{
+    setSelectedUser({username: "", userId: ""});
+  }
  
  
   
