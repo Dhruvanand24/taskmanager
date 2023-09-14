@@ -58,7 +58,7 @@ const Taskadder = (props) => {
       <label>Title</label>
       <input placeholder='enter title'value={title} onChange={(event)=>setTitle(event.target.value)}></input>
       <label>Description</label>
-      <textarea placeholder="enter description"value={description} style={{width:"80%"}} onChange={(event)=>setDescription(event.target.value)} ></textarea>
+      <textarea placeholder="enter description"value={description} style={{width:"80%",marginBottom:"10px"}} onChange={(event)=>setDescription(event.target.value)} ></textarea>
       
       <div style={{display:'flex', flexWrap:'wrap'}}>
       <label>Due Date</label>
