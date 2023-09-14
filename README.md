@@ -53,7 +53,7 @@ Desktop->
 Mobile->
 ![Screenshot_2023-09-15-01-35-12-29_40deb401b9ffe8e1df2f1cc5ba480b12](https://github.com/Dhruvanand24/taskmanager/assets/89727117/223d8e15-c9a1-4a9b-9639-0521c57baf06)
 
-Demo of the Project:
+Real time funcionality demo of the Project:
 
 
 
