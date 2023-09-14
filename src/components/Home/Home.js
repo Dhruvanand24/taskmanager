@@ -11,7 +11,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 
 
 
-function Home(props) {
+function Home() {
   console.log("executed Home");
   const [showNotificationOverlay, setShowNotificationOverlay] = useState(false); // State for showing the overlay
   const [notifications, setNotifications] = useState(["1", "2"]); // State for notifications
