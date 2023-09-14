@@ -5,17 +5,17 @@ import TaskCard from './TaskCard';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
 const RealTimeTasks = (props) => {
-  console.log("executeed realtime tasks");
+  
  
 
   
-  console.log("printing id", props.id);
+  
     const [tasks, setTasks] = useState([])
     const userRef = collection(db, 'users');
     const taskRef = doc(userRef, props.id);
     const taskCol = collection(taskRef, 'Tasks');
     const [selectedFilter, setSelectedFilter] = useState("");
-    console.log(tasks);
+    
     const handleFilterSelect = (event) => {
       const selectedOption = event.target.value;
       setSelectedFilter(selectedOption);

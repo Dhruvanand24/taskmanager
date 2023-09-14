@@ -11,7 +11,7 @@ const DeleteTaskButton = (props) => {
     try {
         const taskRef = doc(db, 'users', user.uid, 'Tasks', id);
         await deleteDoc(taskRef);
-        alert("completed");
+        alert("Deleted");
      }
      catch (error) {
         console.error('an error occured ', error);

@@ -31,7 +31,7 @@ const Taskadder = (props) => {
       
               // Set the usernames data to the state variable 'data'
               setAllusers(usernamesData);
-              console.log(allUsers);
+              
             } catch (error) {
               console.error('Error fetching usernames:', error);
             }
@@ -45,12 +45,11 @@ const Taskadder = (props) => {
       const selectedUserId = event.target.value; // Get the selected user's ID
   const selectedUserData = allUsers.find((user) => user.userId === selectedUserId);
   setSelectedUser(selectedUserData);
-  console.log(selectedUserData.username);
+ 
  
   
     };
-    console.log(selectedUser);
-    console.log(selectedUser.username);
+    
     
   return (
     

@@ -13,7 +13,7 @@ import CommentsDisabledIcon from '@mui/icons-material/CommentsDisabled';
 
 
 const TaskCard = (props) => {
-  console.log("executed Taskcard");
+  
   const user = auth.currentUser;
   const statusc = props.Status==="Completed"?"green":"red";
   const [edit, setEdit] = useState(true);

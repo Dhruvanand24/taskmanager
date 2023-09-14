@@ -21,7 +21,7 @@ const CommentAdder = (props) => {
 
                 
             });
-            alert("saved");
+            alert("Comment Added");
          
             
         

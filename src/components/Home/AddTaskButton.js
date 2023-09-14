@@ -17,7 +17,7 @@ const AddTaskButton = (props) => {
     }
    
     const AddTask = async()=>{
-      console.log("inside addtask", props.SelectedUserId);
+      
         if(!props.Title||!props.Description){
             alert("add title and description");
             return;
@@ -27,8 +27,8 @@ const AddTaskButton = (props) => {
             const TaskRef = doc(userRef, user.uid);
             const TaskCol = collection(TaskRef, "Tasks");
             await addDoc(TaskCol,data );
-            console.log("assigned to",props.AssignedTo);
-            console.log(props.SelectedUserId);
+            
+            
             if(props.AssignedTo!==null){
               const taskref = doc(userRef, props.SelectedUserId);
               const taskcol = collection(taskref, "Tasks");
