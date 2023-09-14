@@ -9,7 +9,7 @@ const DeleteTaskButton = (props) => {
   const user = auth.currentUser;
   const deletedata = async()=>{
     try {
-        const taskRef = doc(db, 'users', user.uid, 'Tasks', id);
+        const taskRef = doc(db, 'Tasks', id);
         await deleteDoc(taskRef);
         alert("Deleted");
      }

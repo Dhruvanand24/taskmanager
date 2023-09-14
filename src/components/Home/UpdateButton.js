@@ -8,13 +8,11 @@ const UpdateButton = (props) => {
     const user = auth.currentUser;
     const updatedata = async()=>{
         try {
-            const userRef = collection(db, "users");
-            const TaskRef = doc(userRef, user.uid);
-            const TaskCol = collection(TaskRef, "Tasks");
-            const docRef = doc(TaskCol, id);
+            const userRef = collection(db, "Tasks");
+            const TaskRef = doc(userRef, id);
             if(props.DueDate!==null){
             
-            await updateDoc(docRef,{
+            await updateDoc(TaskRef,{
                 Title: props.Title,
                 Description: props.Description,
                 DueDate: props.DueDate

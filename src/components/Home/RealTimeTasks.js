@@ -11,9 +11,7 @@ const RealTimeTasks = (props) => {
   
   
     const [tasks, setTasks] = useState([])
-    const userRef = collection(db, 'users');
-    const taskRef = doc(userRef, props.id);
-    const taskCol = collection(taskRef, 'Tasks');
+    const userRef = collection(db, 'Tasks');
     const [selectedFilter, setSelectedFilter] = useState("");
     
     const handleFilterSelect = (event) => {
@@ -29,12 +27,20 @@ const RealTimeTasks = (props) => {
   });
 
     useEffect(()=>{
-      const unsubscribe = onSnapshot(taskCol, snapshot => {
-      setTasks(snapshot.docs.map(doc=>({id: doc.id, data:doc.data()})))
-      })
-    return ()=>{
-      unsubscribe()
-    }
+      const unsubscribe = onSnapshot(userRef, (snapshot) => {
+        setTasks(
+          snapshot.docs
+            .filter((doc) => {
+              const data = doc.data();
+              return data.AssignedByid === props.id || data.AssignedToid === props.id;
+            })
+            .map((doc) => ({ id: doc.id, data: doc.data() }))
+        );
+      });
+    
+      return () => {
+        unsubscribe();
+      };
     
     
     },[])

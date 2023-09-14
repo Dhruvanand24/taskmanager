@@ -30,16 +30,14 @@ const TaskCard = (props) => {
     setShowComment(!showComment);
    
   };
-  const userRef = collection(db, 'users');
-  const taskRef = doc(userRef, user.uid);
-  const taskCol = collection(taskRef, 'Tasks');
-  const comRef = doc(taskCol, props.id);
-  const comcol = collection(comRef, 'Comments');
+  const userRef = collection(db, 'Tasks');
+  const taskRef = doc(userRef, props.id);
+  const taskCol = collection(taskRef, 'Comments');
 
 
 
   useEffect(()=>{
-    const unsubscribe = onSnapshot(comcol, snapshot => {
+    const unsubscribe = onSnapshot(taskCol, snapshot => {
     setAllcomments(snapshot.docs.map(doc=>({id: doc.id, data:doc.data()})))
     })
   return ()=>{
