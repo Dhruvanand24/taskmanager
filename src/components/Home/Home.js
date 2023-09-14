@@ -12,6 +12,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 
 
 function Home(props) {
+  console.log("entered home");
   
   const [showNotificationOverlay, setShowNotificationOverlay] = useState(false); // State for showing the overlay
   const [notifications, setNotifications] = useState(["1", "2"]); // State for notifications
@@ -21,8 +22,10 @@ function Home(props) {
     setShowNotificationOverlay(!showNotificationOverlay);
   };
   useEffect(() => {
+    console.log("use eddect of home called");
     // Redirect to the login page if the user is not logged in
     if (!currentUser) {
+      console.log("entered if");
       navigate('/login');
     }
   }, [currentUser, navigate]);
@@ -53,7 +56,8 @@ function Home(props) {
 
         </div>
         <div className={styles.mainarea}>
-        <Taskadder userName={props.name}/>
+          {currentUser?
+        <Taskadder userName={props.name}/>:<></>}
         {currentUser?
         <RealTimeTasks id={currentUser.uid}/>:<></>
         }
