@@ -44,7 +44,7 @@ function Home(props) {
                 <Link to="/signup"><PersonAddAlt1Icon/></Link>
             </h4> 
             
-            <h4>{props.name}</h4>
+            <h4>{currentUser.displayName}</h4>
             <div>
           {/* Button to open/close the notification overlay */}
           <button onClick={toggleNotificationOverlay}><NotificationsIcon /></button>
