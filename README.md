@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+The App is live on (https://taskmanager-six-mocha.vercel.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Id for Testing:
+email: test@gmail.com
+password: 123456
 
-## Available Scripts
+Clone this Repository on your local computer.
+On your Terminal,
+run: 'npm i'
+'npm start'
 
-In the project directory, you can run:
 
-### `npm start`
+Signup Using your email and password or login if you already have an account.
+Add tasks by giving its title, description,  Due Date, user to assign to(optional).
+If you assign a task to other registered user, they will be able to edit, delete, uodate the task.
+All the collaborators are able to add and see comments on the task assigned to them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+SignupScreen:
+Desktop->
+![Screenshot (14)](https://github.com/Dhruvanand24/taskmanager/assets/89727117/c4c9b030-6f90-4c14-aca2-f38562681103)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Mobile->
+![Screenshot_2023-09-15-01-24-52-95_40deb401b9ffe8e1df2f1cc5ba480b12](https://github.com/Dhruvanand24/taskmanager/assets/89727117/96b4af68-eda5-4796-9cd0-45ebd4eeee98)
 
-### `npm test`
+LoginScreen:
+Desktop->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot (16)](https://github.com/Dhruvanand24/taskmanager/assets/89727117/c0e7ad82-8f83-43c2-b395-519f905452d7)
 
-### `npm run build`
+Mobile->
+![Screenshot_2023-09-15-01-33-55-75_40deb401b9ffe8e1df2f1cc5ba480b12](https://github.com/Dhruvanand24/taskmanager/assets/89727117/1a60224d-0159-40c3-8e28-7e85f80f9565)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+HomePage:
+Task Adder:
+Desktop->
+![Screenshot (20)](https://github.com/Dhruvanand24/taskmanager/assets/89727117/36819949-fa72-4b11-a556-39fb7616a1f8)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+Mobile->
+![Screenshot_2023-09-15-01-34-45-12_40deb401b9ffe8e1df2f1cc5ba480b12](https://github.com/Dhruvanand24/taskmanager/assets/89727117/2c9c4af4-937c-4cb7-91f5-c3b97984a891)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+All Task list:
+Desktop->
+![Screenshot (21)](https://github.com/Dhruvanand24/taskmanager/assets/89727117/9d5c6153-46e3-4294-a463-877a6d1f95fe)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Mobile->
+![Screenshot_2023-09-15-01-34-57-62_40deb401b9ffe8e1df2f1cc5ba480b12](https://github.com/Dhruvanand24/taskmanager/assets/89727117/4f94cc2a-4333-45ad-a861-c5f48d7bd087)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Show Comments List:
+Desktop->
+![Screenshot (22)](https://github.com/Dhruvanand24/taskmanager/assets/89727117/c5bf875f-cdfc-489b-9b84-645ed834d97c)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Mobile->
+![Screenshot_2023-09-15-01-35-12-29_40deb401b9ffe8e1df2f1cc5ba480b12](https://github.com/Dhruvanand24/taskmanager/assets/89727117/223d8e15-c9a1-4a9b-9639-0521c57baf06)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Real time funcionality demo of the Project:
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+https://github.com/Dhruvanand24/taskmanager/assets/89727117/da8cb2cc-72eb-4f8d-91fb-ab8635064aba
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
