@@ -8,13 +8,14 @@
 }
 .header{
     height: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     align-items: center;
     width: 100%;
     max-height: max-content;
+    color: white;
     
 }
 .eachtasks{
@@ -59,7 +60,7 @@
     flex-direction: column;
     gap: 8px;
     flex-wrap: wrap;
-    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
+    background-color: rgba(129, 217, 188, 0.833);
 }
 
   
